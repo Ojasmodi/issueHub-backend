@@ -53,7 +53,7 @@ module.exports.setRouter = (app) => {
 
     app.get(`${baseUrl}/getallAssignees/:id`, auth.isAuthorized, issueController.getAllAssigneeOnIssue);
     /**
-     * @api {post} /api/v1/issue/getallAssignees/:id Get all Assignees on Issue
+     * @api {get} /api/v1/issue/getallAssignees/:id Get all Assignees on Issue
      * @apiVersion 1.0.0
      * @apiGroup Assignee
      * @apiParam {String} authToken The token for authentication.(Send authToken as query parameter, body parameter or as a header)

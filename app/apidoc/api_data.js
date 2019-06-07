@@ -1,6 +1,6 @@
 define({ "api": [
   {
-    "type": "post",
+    "type": "get",
     "url": "/api/v1/issue/getallAssignees/:id",
     "title": "Get all Assignees on Issue",
     "version": "1.0.0",
@@ -45,7 +45,7 @@ define({ "api": [
     },
     "filename": "routes/issue.js",
     "groupTitle": "Assignee",
-    "name": "PostApiV1IssueGetallassigneesId"
+    "name": "GetApiV1IssueGetallassigneesId"
   },
   {
     "type": "get",
