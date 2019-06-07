@@ -81,6 +81,11 @@ module.exports.setRouter = (app) => {
      * @api {post} /api/v1/users/signGoogle Login with Google
      * @apiVersion 1.0.0
      * @apiGroup User
+     * 
+     * 
+	 * @apiParam {String} firstName body parameter
+	 * @apiParam {String} lastName body parameter
+	 * @apiParam {String} email body parameter
      *
      *  @apiSuccessExample {json} Success-Response:
      *  {
@@ -182,7 +187,7 @@ module.exports.setRouter = (app) => {
      *  @apiSuccessExample {json} Success-Response:
      *  {
             "error": false,
-            "message": "A new password has been sent to your registered mailId.",
+            "message": "Logged Out Successfully",
             "status": 200,
             "data": "null"
             }

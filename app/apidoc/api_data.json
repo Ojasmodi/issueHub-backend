@@ -551,7 +551,7 @@
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "{\n           \"error\": false,\n           \"message\": \"A new password has been sent to your registered mailId.\",\n           \"status\": 200,\n           \"data\": \"null\"\n           }\n       }",
+          "content": "{\n           \"error\": false,\n           \"message\": \"Logged Out Successfully\",\n           \"status\": 200,\n           \"data\": \"null\"\n           }\n       }",
           "type": "json"
         }
       ]
@@ -616,6 +616,33 @@
     "title": "Login with Google",
     "version": "1.0.0",
     "group": "User",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "firstName",
+            "description": "<p>body parameter</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "lastName",
+            "description": "<p>body parameter</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "email",
+            "description": "<p>body parameter</p>"
+          }
+        ]
+      }
+    },
     "success": {
       "examples": [
         {
